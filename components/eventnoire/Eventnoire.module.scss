@@ -1,6 +1,6 @@
 @import "styles/variables.scss";
 
-.header{
+.header {
   font-size: 65px;
   text-align: center;
   padding-top: 161px;
@@ -19,7 +19,7 @@
   }
 }
 
-.header_mobile{
+.header_mobile {
   display: none;
   margin-top: 0;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.eventnoire_images{
+.eventnoire_images {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@
   }
 }
 
-.image_container{
+.image_container {
   width: 539px;
   height: 449px;
   background-color: $white;
@@ -89,12 +89,11 @@
   }
 }
 
-.eventnoire_card{
+.eventnoire_card {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 30px;
   align-items: center;
-  margin-top: 15px;
 
   @media (max-width: $md-breakpoint) {
     display: flex;
@@ -105,7 +104,12 @@
   }
 }
 
-.dates_display{
+.dates_display {
+  @media (min-width: $md-breakpoint) {
+    & > div:first-child {
+      margin-bottom: 15px;
+    }
+  }
   @media (max-width: $xl-breakpoint) {
     font-size: 12px;
   }
@@ -118,35 +122,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    margin-top: 12px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 12px;
   }
 }
 
-.dates{
+.dates {
   display: flex;
-
-  p{
+  align-items: center;
+  p {
     margin-left: 10px;
-    @media (max-width: $lg-breakpoint) {
+    margin-top: 0;
+    margin-bottom: 0;
+    @media (max-width: $md-breakpoint) {
+      margin-left: 5px;
     }
   }
 }
 
-.dates_img{
+.dates_img {
   @media (max-width: $md-breakpoint) {
     width: 14px !important;
     height: 15px !important;
   }
 }
 
-.btn{
+.btn {
   width: 178px;
 
   @media (max-width: $lg-breakpoint) {
     width: 106px;
-}
+  }
 
   @media (max-width: $md-breakpoint) {
     width: 296px;
