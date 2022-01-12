@@ -11,14 +11,14 @@ function Footer() {
       </p>
       <div className={styles.email_link}>
         <MailOutlined className={styles.email_icon} />
-        {/* <Image
-                src={Email}
-                width={26.9}
-                height={20.75}
-                /> */}
-        <Link href="/">
+        <div
+          onClick={(e) => {
+            window.location = "mailto:info@eventnoire.com";
+            e.preventDefault();
+          }}
+        >
           <p>info@eventnoire.com</p>
-        </Link>
+        </div>
       </div>
     </div>
   );
