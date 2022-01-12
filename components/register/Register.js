@@ -7,7 +7,7 @@ import Backdrop from "../modal/Backdrop";
 import Modal from "../modal/Modal";
 import styles from "./Register.module.scss";
 
-function Register() {
+function Register({ur, pr}) {
   const [showModal, setShowModal] = useState(false);
   const [formState, handleSubmit] = useForm(process.env.NEXT_PUBLIC_UPDATED);
   const formRef = useRef(null);
@@ -122,8 +122,10 @@ function Register() {
           </form>
         </div>
 
-        {formState.succeeded && showModal ? <Modal onCancel={closeModal} /> : null}
-        {formState.succeeded  && showModal? <Backdrop /> : null}
+        { formState.succeeded && showModal ? <Modal onCancel={closeModal} /> : null}
+        {/* {formState.succeeded  && showModal ? <Backdrop /> : null} */}
+        {/* <Backdrop /> */}
+        {/* <Modal onCancel={closeModal} /> */}
       </div>
   );
 }

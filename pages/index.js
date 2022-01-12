@@ -1,10 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Eventnoire from '../components/eventnoire/Eventnoire'
-import Register from '../components/register/Register'
-// import styles from '../styles/globals.scss'
+import Head from "next/head";
+import { useRef } from "react";
+import Image from "next/image";
+import Eventnoire from "../components/eventnoire/Eventnoire";
+import Register from "../components/register/Register";
 
 export default function Home() {
+  const updateRef = useRef();
+  const partnerRef = useRef();
+
   return (
     <div>
       <Head>
@@ -15,11 +18,10 @@ export default function Home() {
 
       {/* Navbar */}
       {/* eventnoire */}
-      <Eventnoire />
+      <Eventnoire ur={updateRef} pr={partnerRef}  />
       {/* register */}
-      <Register />
+      <Register  ur={updateRef} pr={partnerRef} />
       {/* footer */}
-      
     </div>
-  )
+  );
 }

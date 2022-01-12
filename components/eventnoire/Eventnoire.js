@@ -5,7 +5,7 @@ import Calender from "../../public/images/calender.svg";
 import Location from "../../public/images/location.svg";
 import styles from "./Eventnoire.module.scss";
 
-function Eventnoire() {
+function Eventnoire({ur, pr}) {
   const getTicket = () => {
     alert("Coming soon");
   };
