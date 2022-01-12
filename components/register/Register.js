@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { FormspreeProvider } from "@formspree/react";
 import { useForm, ValidationError } from "@formspree/react";
-import LadyImage from "../../public/images/ladyImg.png";
 import Calender from "../../public/images/purpleCalender.svg";
 import Backdrop from "../modal/Backdrop";
 import Modal from "../modal/Modal";
@@ -28,13 +27,15 @@ function Register() {
     <FormspreeProvider project="1854236719059041356">
       <div className={styles.register_container}>
         <p className={styles.header}>STAY UPDATED</p>
+
         <div className={styles.register}>
           <div className={styles.ladyImage} id={styles.form_display}>
             <Image
-              src={LadyImage}
+              src="https://res.cloudinary.com/xand6r/image/upload/v1642019639/Stay_Updated_lb6icp.png"
               width={490}
               height={490}
               id={styles.ladyImage}
+              loading="eager"
               alt=""
             />
           </div>
@@ -43,7 +44,7 @@ function Register() {
             <p className={styles.header_mobile}>STAY UPDATED</p>
             <div className={styles.ladyImage_mobile} id={styles.form_display}>
               <Image
-                src={LadyImage}
+                src="https://res.cloudinary.com/xand6r/image/upload/v1642019639/Stay_Updated_lb6icp.png"
                 width={490}
                 height={490}
                 id={styles.ladyImage}
@@ -85,7 +86,12 @@ function Register() {
             </label>
             <label>
               Phone
-              <input name="phone" required placeholder="Enter phone number" type="tel" />
+              <input
+                name="phone"
+                required
+                placeholder="Enter phone number"
+                type="tel"
+              />
             </label>
             <label className={styles.text}>
               Date of birth
@@ -106,6 +112,7 @@ function Register() {
             <ValidationError errors={state.errors} />
           </form>
         </div>
+
         {showModal ? <Modal onCancel={closeModal} /> : null}
         {showModal ? <Backdrop /> : null}
       </div>

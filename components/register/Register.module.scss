@@ -2,7 +2,7 @@
 
 .register_container {
   padding: 0 200px;
-  margin-top: 200px;
+  margin-top: 241px;
   text-align: center;
 
   @media (max-width: $xl-breakpoint) {
@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 189px;
   // margin: 0 120px;
 
   // @media (max-width: $xxl-breakpoint) {
@@ -45,10 +46,10 @@
 }
 
 .ladyImage{
-  margin-right: 100px;
+  // margin-right: 100px;
 
   @media (max-width: $xxl-breakpoint) {
-    margin-right: 80px !important;
+    // margin-right: 80px !important;
   }
 
   @media (max-width: $xl-breakpoint) {
