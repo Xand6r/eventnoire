@@ -56,8 +56,8 @@ function Register({ur}) {
             onSubmit={handleSubmition}
             className={styles.form}
             id={styles.form_display}
-            action="https://formspree.io/f/xwkyvknz"
             method="POST"
+            ref={formRef}
           >
             <section className={styles.input__wrapper}>
               <label>Full name</label>
