@@ -6,6 +6,10 @@ import Location from "../../public/images/location.svg";
 import styles from "./Eventnoire.module.scss";
 
 function Eventnoire() {
+  const getTicket = () => {
+    alert("Coming soon");
+  };
+
   return (
     <div className={styles.eventnoire}>
       <p className={styles.header}>EVENTNOIRE EXPERIENCES 2022</p>
@@ -38,7 +42,9 @@ function Eventnoire() {
                 <p>Cleaveland, Ohio</p>
               </div>
             </div>
-            <button className={styles.btn}>Get Tickets</button>
+            <button onclick={getTicket} className={styles.btn}>
+              Get Tickets
+            </button>
           </div>
         </div>
 
@@ -61,7 +67,9 @@ function Eventnoire() {
                 <p>Los Angeles, CA</p>
               </div>
             </div>
-            <button className={styles.btn}>Get Tickets</button>
+            <button onClick={getTicket} className={styles.btn}>
+              Get Tickets
+            </button>
           </div>
         </div>
       </div>

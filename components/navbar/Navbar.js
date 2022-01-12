@@ -52,6 +52,7 @@ function Navbar() {
           <Image src={Hamburger} width={22.75} height={13} alt="" />
         ) : null}
       </div>
+
       {show ? (
         <div className={styles.show_hamburger}>
           <div className={styles.images_display}>
@@ -68,6 +69,7 @@ function Navbar() {
           <p>Sponsorship/Partnership</p>
         </div>
       ) : null}
+  
     </nav>
   );
 }
