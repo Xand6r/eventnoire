@@ -1,0 +1,13 @@
+{
+    "forms": {
+       "ContactEventnoire": {
+           "name": "Contact Eventnoire",
+           "actions": [{"type": "email", "to": "ladeakingboye@gmail.com"}],
+           "fields": {
+               "email": {
+                   "required": true
+               }
+           }
+       } 
+    }
+}
