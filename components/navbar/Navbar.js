@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { BigLogo, SmallLogo } from "./assets";
 import Logo from "../../public/images/eventlogo.png";
 import Hamburger from "../../public/images/hamburger.png";
 import Cancel from "../../public/images/eventCancel.png";
@@ -7,6 +8,18 @@ import styles from "./Navbar.module.scss";
 
 function Navbar() {
   const [show, setShow] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
+
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY > 3) {
+        setColorchange(true);
+      } else {
+        setColorchange(false);
+      }
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, []);
 
   const clicked = () => {
     setShow(true);
@@ -17,12 +30,17 @@ function Navbar() {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav
+      style={{ background: !colorChange ? "transparent" : "white" }}
+      className={styles.nav}
+    >
       <div className={styles.left_nav}>
-        <Image src={Logo} width={29.44} height={27.53} alt="" />
-        <p>
-          <span style={{ fontWeight: 700 }}>eventnoire</span>Experiences
-        </p>
+        <span className={styles.small__logo}>
+          <SmallLogo />
+        </span>
+        <span className={styles.big__logo}>
+          <BigLogo />
+        </span>
       </div>
 
       <div className={styles.right_nav}>

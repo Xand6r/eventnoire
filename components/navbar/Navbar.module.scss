@@ -11,7 +11,7 @@
   align-items: center;
   position: fixed;
   top: 0;
-  transition: 0.6s;
+  transition: 300ms;
   z-index: 999;
 
   @media (max-width: $xxl-breakpoint) {
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $md-breakpoint) {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
 }
 
@@ -34,6 +34,20 @@
   display: flex;
   align-items: center;
   transition: 0.6s;
+
+  .small__logo{
+    display: none;
+    @media (max-width: $md-breakpoint) {
+      display: inline-block;
+    }
+  }
+
+  .big__logo{
+    display: inline-block;
+    @media (max-width: $md-breakpoint) {
+      display: none;
+    }
+  }
 }
 
 .right_nav {
@@ -44,18 +58,23 @@
     display: none;
   }
   p {
+    transition: 300ms;
     margin: 0 20px;
     padding: 6px;
-    border-bottom: 1px solid $black;
+    border-bottom: 2px solid $black;
+
+    @media (min-width: $md-breakpoint) {
+      height: 37px;
+    }
   }
 }
 
 .right_nav p:hover {
-  border-bottom: 3px solid $lilac;
+  border-bottom: 8px solid $lilac;
 }
 
 .right_nav p:active {
-    border-bottom: 3px solid $black;
+    border-bottom: 8px solid $black;
   }
 
 .hamburger {
