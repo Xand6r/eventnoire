@@ -2,9 +2,9 @@ import { MailOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import styles from "./Footer.module.scss";
 
-function Footer() {
+function Footer({pr}) {
   return (
-    <div className={styles.footer_container}>
+    <div ref={pr} className={styles.footer_container}>
       <p className={styles.footer_header}>FOR SPONSORSHIP/PARTNERSHIP</p>
       <p className={styles.footer_header_mobile}>
         FOR SPONSORSHIP <br /> OR PARTNERSHIP

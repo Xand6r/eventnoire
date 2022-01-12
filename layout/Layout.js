@@ -1,16 +1,16 @@
-import Footer from "../components/footer/Footer"
-import Navbar from "../components/navbar/Navbar"
-import styles from './Layout.module.scss';
+import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+import styles from "./Layout.module.scss";
 
-function Layout({ children }) {
-    
-    return (
-        <div className={styles.layout}>
-            <Navbar />
-              { children }
-            <Footer />
-        </div>
-    )
+function Layout({ children, ur, pr }) {
+  console.log(ur, pr);
+  return (
+    <div className={styles.layout}>
+      <Navbar ur={ur} pr={pr}/>
+      {children}
+      <Footer pr={pr}/>
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;

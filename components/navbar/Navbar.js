@@ -6,7 +6,7 @@ import Cancel from "../../public/images/eventCancel.png";
 import Image from "next/image";
 import styles from "./Navbar.module.scss";
 
-function Navbar() {
+function Navbar({ pr, ur }) {
   const [show, setShow] = useState(false);
   const [colorChange, setColorchange] = useState(false);
 
@@ -44,8 +44,20 @@ function Navbar() {
       </div>
 
       <div className={styles.right_nav}>
-        <p>Stay Updated</p>
-        <p>Sponsorship/Partnership</p>
+        <p
+          onClick={() => {
+            ur.current.scrollIntoView();
+          }}
+        >
+          Stay Updated
+        </p>
+        <p
+          onClick={() => {
+            pr.current.scrollIntoView();
+          }}
+        >
+          Sponsorship/Partnership
+        </p>
       </div>
       <div className={styles.hamburger} onClick={clicked}>
         {!show ? (
@@ -65,11 +77,22 @@ function Navbar() {
               alt=""
             />
           </div>
-          <p>Stay Updated</p>
-          <p>Sponsorship/Partnership</p>
+          <p
+            onClick={() => {
+              ur.current.scrollIntoView();
+            }}
+          >
+            Stay Updated
+          </p>
+          <p
+            onClick={() => {
+              pr.current.scrollIntoView();
+            }}
+          >
+            Sponsorship/Partnership
+          </p>
         </div>
       ) : null}
-  
     </nav>
   );
 }

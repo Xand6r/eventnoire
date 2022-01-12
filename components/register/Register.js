@@ -1,13 +1,10 @@
 import Image from "next/image";
 import { useState, useRef } from "react";
-import { FormspreeProvider } from "@formspree/react";
 import { useForm, ValidationError } from "@formspree/react";
-import Calender from "../../public/images/purpleCalender.svg";
-import Backdrop from "../modal/Backdrop";
 import Modal from "../modal/Modal";
 import styles from "./Register.module.scss";
 
-function Register({ur, pr}) {
+function Register({ur}) {
   const [showModal, setShowModal] = useState(false);
   const [formState, handleSubmit] = useForm(process.env.NEXT_PUBLIC_UPDATED);
   const formRef = useRef(null);
@@ -27,7 +24,7 @@ function Register({ur, pr}) {
   }
 
   return (
-      <div className={styles.register_container}>
+      <div ref={ur} className={styles.register_container}>
         <p className={styles.header}>STAY UPDATED</p>
 
         <div className={styles.register}>
@@ -42,7 +39,7 @@ function Register({ur, pr}) {
             />
           </div>
 
-          <div className={styles.mobile_form_display}>
+          <div ref={ur} className={styles.mobile_form_display}>
             <p className={styles.header_mobile}>STAY UPDATED</p>
             <div className={styles.ladyImage_mobile} id={styles.form_display}>
               <Image
@@ -123,9 +120,6 @@ function Register({ur, pr}) {
         </div>
 
         { formState.succeeded && showModal ? <Modal onCancel={closeModal} /> : null}
-        {/* {formState.succeeded  && showModal ? <Backdrop /> : null} */}
-        {/* <Backdrop /> */}
-        {/* <Modal onCancel={closeModal} /> */}
       </div>
   );
 }
