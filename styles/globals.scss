@@ -26,7 +26,7 @@ html {
   }
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -42,7 +42,7 @@ body{
   box-sizing: border-box;
 }
 
-p{
+p {
   font-weight: 400;
 }
 
@@ -54,6 +54,7 @@ button {
   height: 55px;
   color: white;
   border-radius: 5px;
+  transition: 300ms;
 }
 
 button:hover {
@@ -70,24 +71,33 @@ input {
   border: 1px solid #dddde5;
   border-radius: 5px;
   background: #f9f9f9;
-  margin: 15px 0;
+  margin-top: 12px;
+  margin-bottom: 30px;
   outline: none;
+  font-family: Stolzl;
+  padding: 15px 20px;
+  transition: 300ms;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #c5c5ca;
+    border: 1px solid transparent;
+  }
+  &:hover {
+    border: 1px solid #8c8b96;
+  }
+  &:focus {
+    border: 1px solid #7D4FE0;
+  }
 
   @media (max-width: $md-breakpoint) {
     width: 335px !important;
   }
 }
 
-input::placeholder {
-  color: #c5c5ca;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 8px;
-}
-
 label {
-  display: flex;
-  flex-direction: column;
   text-align: left;
   color: #8c8b96;
   font-size: 14px;

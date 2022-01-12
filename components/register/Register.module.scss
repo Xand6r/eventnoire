@@ -139,6 +139,21 @@
     }
 }
 
+.input__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  label{
+    transition: 300ms;
+  }
+
+  &:focus-within{
+    label{
+      color: #7D4FE0;
+    }
+  }
+}
+
 
 .mobile_form_display{
   display: none;

@@ -60,46 +60,53 @@ function Register() {
             action="https://formspree.io/f/xwkyvknz"
             method="POST"
           >
-            <label>
-              Full name
+            <section className={styles.input__wrapper}>
+              <label>Full name</label>
               <input
                 required
                 placeholder="Enter first and last name"
                 type="text"
                 name="name"
               />
-            </label>
-            <label htmlFor="email">
-              Email
-              <input
-                name="email"
-                id="email"
-                required
-                placeholder="Enter email"
-                type="email"
-              />
-              <ValidationError
-                field="email"
-                prefix="Email"
-                errors={state.errors}
-              />
-            </label>
-            <label>
-              Phone
+            </section>
+
+            <section className={styles.input__wrapper}>
+              <label htmlFor="email">
+                Email
+                <input
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Enter email"
+                  type="email"
+                />
+                <ValidationError
+                  field="email"
+                  prefix="Email"
+                  errors={state.errors}
+                />
+              </label>
+            </section>
+
+            <section className={styles.input__wrapper}>
+              <label>Phone</label>
               <input
                 name="phone"
                 required
                 placeholder="Enter phone number"
                 type="tel"
               />
-            </label>
-            <label className={styles.text}>
-              Date of birth
-              <input required placeholder="dd/mm/yy" type="tel" name="date" />
-              <div className={styles.input_calender}>
-                <Image src={Calender} width={19.5} height={20.77} alt="" />
-              </div>
-            </label>
+            </section>
+
+            <section className={styles.input__wrapper}>
+              <label className={styles.text}>
+                Date of birth
+                <input required placeholder="dd/mm/yy" type="tel" name="date" />
+                <div className={styles.input_calender}>
+                  <Image src={Calender} width={19.5} height={20.77} alt="" />
+                </div>
+              </label>
+            </section>
             <button
               disabled={state.submitting}
               onClick={openModal}
