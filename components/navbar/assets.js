@@ -204,4 +204,6 @@ export const SmallLogo = () => (
   </svg>
 );
 
-export default () => 2;
+const DefaultFunc = () => 2;
+
+export default DefaultFunc;

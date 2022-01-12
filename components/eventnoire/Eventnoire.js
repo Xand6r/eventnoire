@@ -42,7 +42,7 @@ function Eventnoire() {
                 <p>Cleaveland, Ohio</p>
               </div>
             </div>
-            <button onclick={getTicket} className={styles.btn}>
+            <button onClick={getTicket} className={styles.btn}>
               Get Tickets
             </button>
           </div>
