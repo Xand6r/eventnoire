@@ -64,7 +64,7 @@
 
 .image_container {
   width: 539px;
-  height: 449px;
+  height: 459px;
   background-color: $white;
   border-radius: 5px;
   box-sizing: border-box;
@@ -72,7 +72,7 @@
 
   @media (max-width: $xxl-breakpoint) {
     width: 539px;
-    height: 440px;
+    height: 450px;
   }
 
   @media (max-width: $xl-breakpoint) {
