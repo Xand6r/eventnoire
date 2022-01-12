@@ -1,0 +1,149 @@
+@import "styles/variables.scss";
+
+.register_container {
+  padding: 0 200px;
+  margin-top: 200px;
+  text-align: center;
+
+  @media (max-width: $xl-breakpoint) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    padding: 0 100px;
+    margin-top: 150px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: 0 120px;
+
+  // @media (max-width: $xxl-breakpoint) {
+  //   margin: 0 45px;
+  // }
+
+  @media (max-width: $xxl-breakpoint) {
+    margin: 0;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.ladyImage{
+  margin-right: 100px;
+
+  @media (max-width: $xxl-breakpoint) {
+    margin-right: 80px !important;
+  }
+
+  @media (max-width: $xl-breakpoint) {
+    width: 327px !important;
+    height: 327px !important;
+    margin-right: 50px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
+}
+
+.ladyImage_mobile{
+  display: none;
+
+  @media (max-width: $lg-breakpoint) {
+    display: flex;
+    width: 327px !important;
+    height: 327px !important;
+    margin-right: 50px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    width: 227px !important;
+    height: 227px !important;
+    margin: 25px 0;
+  }
+}
+
+.header {
+  font-size: 35px;
+  letter-spacing: 5px;
+
+  @media (max-width: $xxl-breakpoint) {
+    display: none;
+  }
+}
+
+.header_mobile{
+  display: none;
+
+  @media (max-width: $xxl-breakpoint) {
+    display: flex;
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+
+  // @media (max-width: $xxl-breakpoint) {
+  //   margin-left: 50px;
+  // }
+
+  @media (max-width: $xxl-breakpoint) {
+    margin-left: 0px;
+  }
+}
+
+.form input{
+  @media (max-width: $lg-breakpoint) {
+    width: 335px;
+  }
+}
+
+.text{
+  position: relative;
+}
+
+.input_calender{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.form_btn {
+    width: 140px;
+
+    @media (max-width: $md-breakpoint) {
+      width: 335px;
+      margin-top: 30px;
+    }
+}
+
+
+.mobile_form_display{
+  display: none;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

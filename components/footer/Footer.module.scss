@@ -1,0 +1,72 @@
+@import "styles/variables.scss";
+
+.footer_container {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #19172d;
+  margin-top: 150px;
+
+  @media (max-width: $lg-breakpoint) {
+    height: 305px;
+    margin-top: 100px;
+  }
+}
+
+.email_link {
+  cursor: pointer;
+  display: flex;
+  color: $light-lilac;
+  font-size: 24px;
+  align-items: center;
+  border-bottom: 1px solid $light-lilac;
+  
+  @media (max-width: $md-breakpoint) {
+      font-size: 16px;
+    }
+}
+
+.email_link p{
+    margin: 5px;
+}
+
+.email_link:hover {
+  border-bottom: 3px solid $white;
+}
+
+.email_link:active {
+  color: $white;
+}
+
+.email_icon{
+ font-size: 20px;
+ border-radius: 50px;
+ margin-right: 10px;
+}
+
+.footer_header {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+
+  @media (max-width: $md-breakpoint) {
+    display: none !important;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    display: flex;
+    font-size: 24px;
+  }
+}
+
+.footer_header_mobile {
+  display: none;
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+  }
+}

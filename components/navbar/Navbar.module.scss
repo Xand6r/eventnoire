@@ -1,0 +1,94 @@
+@import "styles/variables.scss";
+
+.nav {
+  padding: 10px 240px;
+  margin: 0;
+  width: 100%;
+  height: 81px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transition: 0.6s;
+  z-index: 999;
+
+  @media (max-width: $xxl-breakpoint) {
+    padding: 10px 100px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    padding: 10px 50px;
+    font-size: 12px;
+    height: 51px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    padding: 10px 40px;
+  }
+}
+
+.left_nav {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.right_nav {
+  cursor: pointer;
+  transition: 0.6s;
+  display: flex;
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
+  p {
+    margin: 0 20px;
+    padding: 6px;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.right_nav p:hover {
+  border-bottom: 3px solid $lilac;
+}
+
+.right_nav p:active {
+    border-bottom: 3px solid $black;
+  }
+
+.hamburger {
+  display: none;
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+.show_hamburger {
+  width: 261px;
+  height: 185px;
+  background-color: $white;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  position: absolute;
+  right: 0;
+}
+
+.show_hamburger p:hover {
+  cursor: pointer;
+  color: $lilac;
+}
+
+.images_display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}

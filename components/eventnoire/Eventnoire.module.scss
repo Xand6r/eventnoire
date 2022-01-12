@@ -1,0 +1,156 @@
+@import "styles/variables.scss";
+
+.header{
+  font-size: 66px;
+  text-align: center;
+  padding-top: 50px;
+
+  @media (max-width: $xl-breakpoint) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
+}
+
+.header_mobile{
+  display: none;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+.eventnoire_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 250px;
+  margin-top: 120px;
+
+  @media (max-width: $xxl-breakpoint) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: $xl-breakpoint) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.image_container{
+  width: 539px;
+  height: 449px;
+  background-color: $white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 40px;
+
+  @media (max-width: $xxl-breakpoint) {
+    width: 480px;
+    height: 440px;
+  }
+
+  @media (max-width: $xl-breakpoint) {
+    width: 380px;
+    height: 350px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    margin: 0 20px;
+    height: 333px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    width: 337px;
+    height: 334px;
+    margin: 25px 0;
+  }
+}
+
+.eventnoire_card{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  margin-top: 15px;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: unset;
+    margin: 0;
+  }
+}
+
+.dates_display{
+  @media (max-width: $xl-breakpoint) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
+
+.dates{
+  display: flex;
+
+  p{
+    margin-left: 10px;
+    @media (max-width: $lg-breakpoint) {
+    }
+  }
+}
+
+.dates_img{
+  @media (max-width: $md-breakpoint) {
+    width: 14px !important;
+    height: 15px !important;
+  }
+}
+
+.btn{
+  width: 178px;
+
+  @media (max-width: $lg-breakpoint) {
+    width: 106px;
+}
+
+  @media (max-width: $md-breakpoint) {
+    width: 296px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+  }
+}

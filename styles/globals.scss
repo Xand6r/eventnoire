@@ -1,0 +1,104 @@
+@import "styles/variables.scss";
+
+@font-face {
+  font-family: "mabry-pro";
+  src: url("../public/images/Fonts/Stolzl-Regular.ttf");
+}
+
+html {
+  font-size: 16px;
+  font-family: "mabry-pro";
+  scroll-behavior: smooth;
+
+  // on tablets
+  @media (max-width: $md-breakpoint) {
+    font-size: 14px;
+  }
+
+  // on phones
+  @media (max-width: $md-breakpoint) {
+    font-size: 13px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// ------- Define the different sizes of the texts
+@mixin defaultstyles {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p{
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  background-color: #7d4fe0;
+  outline: none;
+  border: none;
+  height: 55px;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #9f7bef;
+}
+
+button:active {
+  background-color: #19172d;
+}
+
+input {
+  width: 390px;
+  height: 55px;
+  border: 1px solid #dddde5;
+  border-radius: 5px;
+  background: #f9f9f9;
+  margin: 15px 0;
+  outline: none;
+
+  @media (max-width: $md-breakpoint) {
+    width: 335px !important;
+  }
+}
+
+input::placeholder {
+  color: #c5c5ca;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #8c8b96;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// Small devices (landscape phones, 576px and down)
+@media (max-width: 576px) {
+  input {
+    width: 335px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  input {
+    width: 335px;
+  }
+}
