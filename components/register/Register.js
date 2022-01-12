@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FormspreeProvider } from "@formspree/react";
 import { useForm, ValidationError } from "@formspree/react";
 import Calender from "../../public/images/purpleCalender.svg";
@@ -9,11 +9,8 @@ import styles from "./Register.module.scss";
 
 function Register() {
   const [showModal, setShowModal] = useState(false);
-  const [state, handleSubmit] = useForm("ContactEventnoire");
-
-  if (state.succeeded) {
-    return <h1>Thanks!</h1>;
-  }
+  const [formState, handleSubmit] = useForm(process.env.NEXT_PUBLIC_UPDATED);
+  const formRef = useRef(null);
 
   const openModal = () => {
     setShowModal(!showModal);
@@ -23,8 +20,13 @@ function Register() {
     setShowModal(false);
   };
 
+  const handleSubmition = (...params) => {
+    handleSubmit(...params).then(res => {
+      formRef.current.reset();
+    })
+  }
+
   return (
-    <FormspreeProvider project="1854236719059041356">
       <div className={styles.register_container}>
         <p className={styles.header}>STAY UPDATED</p>
 
@@ -54,7 +56,7 @@ function Register() {
           </div>
 
           <form
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmition}
             className={styles.form}
             id={styles.form_display}
             action="https://formspree.io/f/xwkyvknz"
@@ -67,6 +69,11 @@ function Register() {
                 placeholder="Enter first and last name"
                 type="text"
                 name="name"
+              />
+              <ValidationError
+                field="name"
+                prefix="name"
+                errors={formState.errors}
               />
             </section>
 
@@ -82,7 +89,7 @@ function Register() {
               <ValidationError
                 field="email"
                 prefix="Email"
-                errors={state.errors}
+                errors={formState.errors}
               />
             </section>
 
@@ -98,15 +105,15 @@ function Register() {
 
             <section className={styles.input__wrapper}>
               <label className={styles.text}>Date of birth</label>
-              <div style={{position: "relative"}}>
-                <input required placeholder="dd/mm/yy" type="tel" name="date" />
+              <div style={{ position: "relative" }}>
+                <input required placeholder="dd/mm/yy" type="date" name="date" />
                 <div className={styles.input_calender}>
                   <Image src={Calender} width={19.5} height={20.77} alt="" />
                 </div>
               </div>
             </section>
             <button
-              disabled={state.submitting}
+              disabled={formState.submitting}
               onClick={openModal}
               type="submit"
               className={styles.form_btn}
@@ -114,14 +121,13 @@ function Register() {
             >
               Submit
             </button>
-            <ValidationError errors={state.errors} />
+            <ValidationError errors={formState.errors} />
           </form>
         </div>
 
-        {showModal ? <Modal onCancel={closeModal} /> : null}
-        {showModal ? <Backdrop /> : null}
+        {formState.succeeded && showModal ? <Modal onCancel={closeModal} /> : null}
+        {formState.succeeded  && showModal? <Backdrop /> : null}
       </div>
-    </FormspreeProvider>
   );
 }
 

@@ -1,37 +1,39 @@
 @import "styles/variables.scss";
 
 .backdrop{
-    position: absolute;
-    // z-index: 1;
+    position: fixed;
+    z-index: 10000000;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 99.92%;
-    height: 225%;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     left: 0;
     overflow-y: scroll;
+}
 
-    @media (max-width: $lg-breakpoint) {
-        height: 171%;
-    }
+.modal_container__wrapper{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000;
 
-    @media (max-width: $md-breakpoint) {
-        height: 289%;
-    }
 }
 
 .modal_container{
-    position: fixed;
+    position: relative;
     box-shadow: 0 1px 4px #00000033;
     background-color: $white;
     border-radius: 5px;
     width: 565px;
     height: 350px;
-    top: 30%;
-    left: 35%;
+    // top: 30%;
+    // left: 35%;
     padding-top: 30px;
     color: $light-gray;
     font-size: 16px;
-    z-index: 999;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,28 +42,28 @@
     @media (max-width: $xxl-breakpoint) {
         // width: 319px;
         // height: 296px;
-        left: 25%;
+        // left: 25%;
     }
 
     @media (max-width: $xl-breakpoint) {
         // width: 319px;
         // height: 296px;
-        left: 22%;
+        // left: / 22%;
     }
 
     @media (max-width: $lg-breakpoint) {
         width: 319px;
         height: 296px;
-        left: 30%;
+        // left: 30%;
         padding-top: 20px;
     }
 
     @media (max-width: $md-breakpoint) {
-        left: 23%;
+        // left: 23%;
     }
 
     @media (max-width: $sm-breakpoint) {
-        left: 6%;
+        // left: 6%;
         padding-top: 20px;
     }
 }
