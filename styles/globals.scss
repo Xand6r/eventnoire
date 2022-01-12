@@ -89,7 +89,7 @@ input {
     border: 1px solid #8c8b96;
   }
   &:focus {
-    border: 1px solid #7D4FE0;
+    border: 1px solid #7d4fe0;
   }
 
   @media (max-width: $md-breakpoint) {
@@ -115,5 +115,24 @@ label {
 @media (min-width: 576px) and (max-width: 768px) {
   input {
     width: 335px;
+  }
+}
+
+input {
+  &[type="date"] {
+    background:
+      url(https://res.cloudinary.com/xand6r/image/upload/v1642026263/calender_fknavg.svg)
+      97% 50% no-repeat;
+      &:focus{
+        background:
+        url(https://res.cloudinary.com/xand6r/image/upload/v1642026636/purpleCalender_ythqed.svg)
+        97% 50% no-repeat;
+      }
+  }
+  &[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  &[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
   }
 }

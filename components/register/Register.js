@@ -107,9 +107,6 @@ function Register() {
               <label className={styles.text}>Date of birth</label>
               <div style={{ position: "relative" }}>
                 <input required placeholder="dd/mm/yy" type="date" name="date" />
-                <div className={styles.input_calender}>
-                  <Image src={Calender} width={19.5} height={20.77} alt="" />
-                </div>
               </div>
             </section>
             <button
