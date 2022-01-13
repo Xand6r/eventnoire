@@ -2,6 +2,7 @@ import Image from "next/image";
 import ImageOne from "../../public/images/All-star-one.png";
 import ImageTwo from "../../public/images/All-star-two.png";
 import Calender from "../../public/images/calender.svg";
+import Clock from "../../public/images/clock.svg";
 import Location from "../../public/images/location.svg";
 import styles from "./Eventnoire.module.scss";
 
@@ -27,10 +28,17 @@ function Eventnoire({ ur, pr }) {
           />
           <div className={styles.eventnoire_card}>
             <div className={styles.dates_display}>
-              <div className={styles.dates}>
-                <Image src={Calender} width={17.5} height={20.75} alt="" />
-                <p>Feb 18th-20th, 2022</p>
+              <div className={styles.info_wrapper}>
+                <div className={styles.dates}>
+                  <Image src={Calender} width={17.5} height={20.75} alt="" />
+                  <p>Feb 18th-20th, 2022</p>
+                </div>
+                <div className={styles.time}>
+                  <Image src={Clock} width={17.5} height={20.75} alt="" />
+                  <span>3PM - 9PM</span>
+                </div>
               </div>
+
               <div className={styles.dates}>
                 <Image
                   src={Location}
@@ -58,9 +66,15 @@ function Eventnoire({ ur, pr }) {
           />
           <div className={styles.eventnoire_card}>
             <div className={styles.dates_display}>
-              <div className={styles.dates}>
-                <Image src={Calender} width={17.5} height={20.75} alt="" />
-                <p>Feb 12th, 2022</p>
+            <div className={styles.info_wrapper}>
+                <div className={styles.dates}>
+                  <Image src={Calender} width={17.5} height={20.75} alt="" />
+                  <p>Feb 18th-20th, 2022</p>
+                </div>
+                <div className={styles.time}>
+                  <Image src={Clock} width={17.5} height={20.75} alt="" />
+                  <span>9PM - 2AM</span>
+                </div>
               </div>
               <div className={styles.dates}>
                 <Image src={Location} width={17.5} height={20.75} alt="" />

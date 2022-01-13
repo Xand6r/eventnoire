@@ -20,6 +20,24 @@
   }
 }
 
+.info_wrapper{
+  display: flex;
+  gap: 45px;
+
+  @media (max-width: $md-breakpoint) {
+    margin-bottom: 14px;
+  }
+
+  & > div{
+    align-items: center;
+  }
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .header_mobile {
   display: none;
   margin-top: 0;
@@ -77,12 +95,12 @@
 
   @media (max-width: $xl-breakpoint) {
     width: 380px;
-    height: 350px;
+    height: 436px;
   }
 
   @media (max-width: $lg-breakpoint) {
     margin: 0 20px;
-    height: 380px;
+    height: 430px;
   }
 
   @media (max-width: $md-breakpoint) {
@@ -164,7 +182,8 @@
 
 .dates {
   display: flex;
-  align-items: center;
+  // align-items: center;
+  align-items: flex-start;
   p {
     margin-left: 10px;
     margin-top: 0;
