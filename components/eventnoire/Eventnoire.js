@@ -22,13 +22,20 @@ function Eventnoire({ ur, pr }) {
       </p>
       <div className={styles.eventnoire_images}>
         <div className={styles.image_container}>
-          <Image
-            className={styles.imageOne}
-            src={ImageOne}
-            width={539}
-            height={324}
-            alt=""
-          />
+          <div
+            style={{
+              borderRadius: "5px",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              className={styles.imageOne}
+              src={ImageOne}
+              width={539}
+              height={324}
+              alt=""
+            />
+          </div>
           <div className={styles.eventnoire_card}>
             <div className={styles.dates_display}>
               <div className={styles.info_wrapper}>
@@ -59,22 +66,27 @@ function Eventnoire({ ur, pr }) {
           </div>
         </div>
 
-
-
         <div className={styles.image_container}>
-          <Image
-            className={styles.imageOne}
-            src={ImageTwo}
-            width={539}
-            height={324}
-            alt=""
-          />
+          <div
+            style={{
+              borderRadius: "5px",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              className={styles.imageOne}
+              src={ImageTwo}
+              width={539}
+              height={324}
+              alt=""
+            />
+          </div>
           <div className={styles.eventnoire_card}>
             <div className={styles.dates_display}>
               <div className={styles.info_wrapper}>
                 <div className={styles.dates}>
                   <Image src={Calender} width={17.5} height={20.75} alt="" />
-                  <p>Feb 18th-20th, 2022</p>
+                  <p>Feb 12th, 2022</p>
                 </div>
                 <div className={styles.time}>
                   <Image src={Clock} width={17.5} height={20.75} alt="" />

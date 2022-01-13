@@ -5,7 +5,7 @@
   text-align: center;
   padding-top: 161px;
   margin-top: 0;
-  color: #19172D;
+  color: #19172d;
 
   @media (max-width: $xl-breakpoint) {
     font-size: 48px;
@@ -20,7 +20,7 @@
   }
 }
 
-.info_wrapper{
+.info_wrapper {
   display: flex;
   gap: 45px;
 
@@ -28,12 +28,12 @@
     margin-bottom: 14px;
   }
 
-  & > div{
+  & > div {
     align-items: center;
   }
 }
 
-.time{
+.time {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -41,7 +41,7 @@
 .header_mobile {
   display: none;
   margin-top: 0;
-  color: #19172D;
+  color: #19172d;
 
   @media (max-width: $md-breakpoint) {
     display: flex;
@@ -87,6 +87,8 @@
   border-radius: 5px;
   box-sizing: border-box;
   margin: 0 40px;
+  // border-radius: 6px;
+  // overflow: hidden !important;
 
   @media (max-width: $xxl-breakpoint) {
     width: 539px;
@@ -128,27 +130,26 @@
   }
 }
 
-.eventnoire_card{
+.eventnoire_card {
   .dates_display {
     @media (min-width: $md-breakpoint) {
       & > div:first-child {
         margin-bottom: 24px;
       }
-  
     }
     @media (max-width: $xl-breakpoint) {
       font-size: 12px;
       flex-direction: column;
       align-items: flex-start;
     }
-  
+
     @media (max-width: $lg-breakpoint) {
       font-size: 12px;
       font-size: 12px;
       flex-direction: column;
       align-items: flex-start;
     }
-  
+
     @media (max-width: $md-breakpoint) {
       display: flex;
       justify-content: space-between;
@@ -161,7 +162,7 @@
       align-items: flex-start;
     }
   }
-  button{
+  button {
     font-family: "Stolzl";
     @media (min-width: $md-breakpoint) {
       margin-top: 29px;
@@ -169,16 +170,14 @@
     @media (max-width: $xl-breakpoint) {
       font-size: 12px;
     }
-  
+
     @media (max-width: $lg-breakpoint) {
       font-size: 12px;
     }
-  
-    @media (max-width: $md-breakpoint) {
 
+    @media (max-width: $md-breakpoint) {
     }
   }
-
 }
 
 .dates {
