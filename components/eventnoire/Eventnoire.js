@@ -59,6 +59,8 @@ function Eventnoire({ ur, pr }) {
           </div>
         </div>
 
+
+
         <div className={styles.image_container}>
           <Image
             className={styles.imageOne}
