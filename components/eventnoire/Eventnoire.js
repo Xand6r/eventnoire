@@ -75,7 +75,7 @@ function Eventnoire({ ur, pr }) {
           >
             <Image
               className={styles.imageOne}
-              src={ImageTwo}
+              src={ImageOne}
               width={539}
               height={324}
               alt=""
