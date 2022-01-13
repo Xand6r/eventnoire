@@ -5,6 +5,17 @@
   src: url("../public/images/Fonts/Stolzl-Regular.ttf");
 }
 
+@font-face {
+  font-family: "clash-bold";
+  src: url("../public/images/clashfont/ClashDisplay-Bold.otf");
+}
+
+@font-face {
+  font-family: "clash-semibold";
+  src: url("../public/images/clashfont/ClashDisplay-Semibold.otf");
+}
+
+
 html {
   font-size: 16px;
   font-family: "Stolzl";
