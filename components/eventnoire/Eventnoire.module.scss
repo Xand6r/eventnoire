@@ -8,12 +8,10 @@
   color: #19172d;
   font-family: "clash-bold";
   background: linear-gradient(to right, #7D4FE0 , #F39180, #7AD5E9);
-  // background: -webkit-linear-gradient(to right, #, , #7AD5E9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  // background-image: linear-gradient(#7D4FE0, #F39180, #7AD5E9);
-  // text-fill-color: transparent;
+
   @media (max-width: $xl-breakpoint) {
     font-size: 48px;
   }
@@ -49,6 +47,11 @@
   display: none;
   margin-top: 0;
   color: #19172d;
+  font-family: "clash-bold";
+  background: linear-gradient(to right, #7D4FE0 , #F39180, #7AD5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 
   @media (max-width: $md-breakpoint) {
     display: flex;
@@ -127,6 +130,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  font-family: "clash-semibold";
 
   @media (max-width: $md-breakpoint) {
     display: flex;
@@ -191,6 +195,7 @@
   display: flex;
   // align-items: center;
   align-items: flex-start;
+
   p {
     margin-left: 10px;
     margin-top: 0;

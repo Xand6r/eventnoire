@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useClickAway } from "react-use";
 import { BigLogo, SmallLogo } from "./assets";
 import Logo from "../../public/images/eventlogo.png";
 import Hamburger from "../../public/images/hamburger.png";
@@ -9,6 +10,11 @@ import styles from "./Navbar.module.scss";
 function Navbar({ pr, ur }) {
   const [show, setShow] = useState(false);
   const [colorChange, setColorchange] = useState(false);
+  const popupRef = useRef();
+
+  useClickAway(popupRef, () => {
+    setShow(false);
+  })
 
   useEffect(() => {
     const changeNavbarColor = () => {
@@ -66,7 +72,7 @@ function Navbar({ pr, ur }) {
       </div>
 
       {show ? (
-        <div className={styles.show_hamburger}>
+        <div ref={popupRef} className={styles.show_hamburger}>
           <div className={styles.images_display}>
             <Image src={Logo} width={24.44} height={22.18} alt="" />
             <Image
