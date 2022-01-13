@@ -5,7 +5,7 @@ import Calender from "../../public/images/calender.svg";
 import Location from "../../public/images/location.svg";
 import styles from "./Eventnoire.module.scss";
 
-function Eventnoire({ur, pr}) {
+function Eventnoire({ ur, pr }) {
   const getTicket = () => {
     alert("Coming soon");
   };
@@ -39,7 +39,7 @@ function Eventnoire({ur, pr}) {
                   className={styles.dates_img}
                   alt=""
                 />
-                <p>Cleaveland, Ohio</p>
+                <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
               </div>
             </div>
             <button onClick={getTicket} className={styles.btn}>
@@ -60,11 +60,11 @@ function Eventnoire({ur, pr}) {
             <div className={styles.dates_display}>
               <div className={styles.dates}>
                 <Image src={Calender} width={17.5} height={20.75} alt="" />
-                <p>Feb 18th-20th, 2022</p>
+                <p>Feb 12th, 2022</p>
               </div>
               <div className={styles.dates}>
                 <Image src={Location} width={17.5} height={20.75} alt="" />
-                <p>Los Angeles, CA</p>
+                <p>BARLEY HOUSE - 1261 W 6th St, Cleveland, OH 44113</p>
               </div>
             </div>
             <button onClick={getTicket} className={styles.btn}>
