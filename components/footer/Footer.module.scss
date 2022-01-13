@@ -23,6 +23,7 @@
   align-items: center;
   border-bottom: 2px solid $light-lilac;
   transition: 300ms;
+  height: 40px;
   
   @media (max-width: $md-breakpoint) {
       font-size: 16px;
@@ -31,6 +32,7 @@
 
 .email_link p{
     margin: 5px;
+    margin-bottom: 8px;
 }
 
 .email_link:hover {
@@ -43,7 +45,6 @@
 
 .email_icon{
  font-size: 20px;
- border-radius: 50px;
  margin-right: 10px;
 }
 
