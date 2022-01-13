@@ -46,7 +46,7 @@ function Navbar({ pr, ur }) {
       <div className={styles.right_nav}>
         <p
           onClick={() => {
-            ur.current.scrollIntoView();
+            ur.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }}
         >
           Stay Updated
@@ -79,7 +79,7 @@ function Navbar({ pr, ur }) {
           </div>
           <p
             onClick={() => {
-              ur.current.scrollIntoView();
+              ur.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }}
           >
             Stay Updated

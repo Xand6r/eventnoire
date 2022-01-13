@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 
@@ -105,7 +105,7 @@
 
   @media (max-width: $md-breakpoint) {
     width: 337px;
-    height: 373px;
+    height: 388px;
     margin: 25px 0;
   }
 }
@@ -162,6 +162,7 @@
     }
   }
   button{
+    font-family: "Stolzl";
     @media (min-width: $md-breakpoint) {
       margin-top: 29px;
     }
@@ -189,6 +190,7 @@
     margin-top: 0;
     margin-bottom: 0;
     @media (max-width: $md-breakpoint) {
+      line-height: 17px;
       margin-left: 5px;
     }
   }

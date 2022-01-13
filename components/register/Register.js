@@ -39,7 +39,7 @@ function Register({ ur }) {
           />
         </div>
 
-        <div ref={ur} className={styles.mobile_form_display}>
+        <div className={styles.mobile_form_display}>
           <p className={styles.header_mobile}>STAY UPDATED</p>
           <div className={styles.ladyImage_mobile} id={styles.form_display}>
             <Image

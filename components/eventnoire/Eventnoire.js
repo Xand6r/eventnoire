@@ -7,8 +7,11 @@ import Location from "../../public/images/location.svg";
 import styles from "./Eventnoire.module.scss";
 
 function Eventnoire({ ur, pr }) {
-  const getTicket = () => {
-    alert("Coming soon");
+  const getTicket = (link) => {
+    if (!Boolean(link)) {
+      return alert("Coming soon");
+    }
+    window.open(link, "_blank");
   };
 
   return (
@@ -50,7 +53,7 @@ function Eventnoire({ ur, pr }) {
                 <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
               </div>
             </div>
-            <button onClick={getTicket} className={styles.btn}>
+            <button onClick={() => getTicket()} className={styles.btn}>
               Get Tickets
             </button>
           </div>
@@ -66,7 +69,7 @@ function Eventnoire({ ur, pr }) {
           />
           <div className={styles.eventnoire_card}>
             <div className={styles.dates_display}>
-            <div className={styles.info_wrapper}>
+              <div className={styles.info_wrapper}>
                 <div className={styles.dates}>
                   <Image src={Calender} width={17.5} height={20.75} alt="" />
                   <p>Feb 18th-20th, 2022</p>
@@ -81,7 +84,14 @@ function Eventnoire({ ur, pr }) {
                 <p>BARLEY HOUSE - 1261 W 6th St, Cleveland, OH 44113</p>
               </div>
             </div>
-            <button onClick={getTicket} className={styles.btn}>
+            <button
+              onClick={() =>
+                getTicket(
+                  "https://events.eventnoire.com/e/big-game-daytime-experience-hosted-by-2-chainz"
+                )
+              }
+              className={styles.btn}
+            >
               Get Tickets
             </button>
           </div>
