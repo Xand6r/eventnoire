@@ -3,7 +3,6 @@ import Navbar from "../components/navbar/Navbar";
 import styles from "./Layout.module.scss";
 
 function Layout({ children, ur, pr }) {
-  console.log(ur, pr);
   return (
     <div className={styles.layout}>
       <Navbar ur={ur} pr={pr}/>

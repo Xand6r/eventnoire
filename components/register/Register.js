@@ -106,6 +106,28 @@ function Register({ ur }) {
               <input required placeholder="dd/mm/yy" type="date" name="date" />
             </div>
           </section>
+
+
+          <section className={styles.input__wrapper}>
+            <label>City</label>
+            <input
+              name="city"
+              required
+              placeholder="Enter city name"
+              type="text"
+            />
+          </section>
+
+
+          <section className={styles.input__wrapper}>
+            <label>Zip code</label>
+            <input
+              name="zipcode"
+              required
+              placeholder="Enter zip code"
+              type="text"
+            />
+          </section>
           <button
             disabled={formState.submitting}
             onClick={openModal}
