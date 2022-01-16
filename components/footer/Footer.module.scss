@@ -27,7 +27,7 @@
   height: 40px;
   
   @media (max-width: $md-breakpoint) {
-      font-size: 16px;
+      font-size: 20px;
     }
 }
 
@@ -77,16 +77,19 @@
 
 .discover{
   background-color: #19172D;
-  padding: 71px 140px;
+  padding: 71px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $xxl-breakpoint) {
+    padding: 71px 240px;
+  }
 
   @media (max-width: $lg-breakpoint) {
     flex-direction: column;
     gap: 25px;
     text-align: center;
-    line-height: 40px;
+    line-height: 33px;
     padding: 53px;
     padding-bottom: 62px;
   }
@@ -96,6 +99,10 @@
     font-size: 24px;
     font-family: 'clash-semibold';
     // line-height: 66px;
+
+    @media (max-width: $md-breakpoint) {
+      font-size: 20px;
+    }
 
     div{
       height: 36px;
