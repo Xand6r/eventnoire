@@ -65,7 +65,7 @@ function Eventnoire({ ur, pr }) {
             <button
               onClick={() => {
                 getTicket(
-                  "https://events.eventnoire.com/e/big-game-daytime-experience-hosted-by-2-chainz"
+                  "https://events.eventnoire.com/e/2chainz/tickets"
                 );
               }}
               className={styles.btn}
