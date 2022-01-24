@@ -1,14 +1,28 @@
 import Head from "next/head";
+import { useRouter } from 'next/router';
 import Layout from "../layout/Layout";
 
-import { useRef } from "react";
-import Image from "next/image";
+import { useRef, useEffect } from "react";
 import Eventnoire from "../components/eventnoire/Eventnoire";
 import Register from "../components/register/Register";
 
 export default function Home() {
   const updateRef = useRef();
   const partnerRef = useRef();
+  const router = useRouter();
+
+  useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('2374475996162355') // facebookPixelId
+        ReactPixel.pageView()
+
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView()
+        });
+      })
+  }, [router.events])
 
   return (
     <Layout ur={updateRef} pr={partnerRef}>
