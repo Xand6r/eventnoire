@@ -20,106 +20,256 @@ function Eventnoire({ ur, pr }) {
       <p className={styles.header_mobile}>
         {/* EVENTNOIRE <br /> EXPERIENCES 2022
          */}
-         <HeaderMobile />
+        <HeaderMobile />
       </p>
       <div className={styles.eventnoire_images}>
-        <div className={styles.image_container}>
-          <div
-            style={{
-              borderRadius: "5px",
-              overflow: "hidden",
-            }}
-          >
-            <Image
-              className={styles.imageOne}
-              src={ImageTwo}
-              width={539}
-              height={324}
-              alt=""
-            />
-          </div>
-          <div className={styles.eventnoire_card}>
-            <div className={styles.dates_display}>
-              <div className={styles.info_wrapper}>
-                <div className={styles.dates}>
-                  <Image src={Calender} width={17.5} height={20.75} alt="" />
-                  <p>SAT. FEB 12TH, 2022</p>
-                </div>
-                <div className={styles.time}>
-                  <Image src={Clock} width={17.5} height={20.75} alt="" />
-                  <span>3PM - 9PM</span>
-                </div>
-              </div>
-
-              <div className={styles.dates}>
-                <Image
-                  src={Location}
-                  width={17.5}
-                  height={20.75}
-                  className={styles.dates_img}
-                  alt=""
-                />
-                <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
-              </div>
-            </div>
-            <button
-              onClick={() => {
-                getTicket(
-                  "https://events.eventnoire.com/e/2chainz/tickets"
-                );
+        <section>
+          <div className={styles.image_container}>
+            <div
+              style={{
+                borderRadius: "5px",
+                overflow: "hidden",
               }}
-              className={styles.btn}
             >
-              Get Tickets
-            </button>
-          </div>
-        </div>
-
-        <div className={styles.image_container}>
-          <div
-            style={{
-              borderRadius: "5px",
-              overflow: "hidden",
-            }}
-          >
-            <Image
-              className={styles.imageOne}
-              src={ImageOne}
-              width={539}
-              height={324}
-              alt=""
-            />
-          </div>
-          <div className={styles.eventnoire_card}>
-            <div className={styles.dates_display}>
-              <div className={styles.info_wrapper}>
-                <div className={styles.dates}>
-                  <Image src={Calender} width={17.5} height={20.75} alt="" />
-                  <p>FRI. FEB 18TH, 2022</p>
-                </div>
-                <div className={styles.time}>
-                  <Image src={Clock} width={17.5} height={20.75} alt="" />
-                  <span>9PM - 2AM</span>
-                </div>
-              </div>
-              <div className={styles.dates}>
-                <Image src={Location} width={17.5} height={20.75} alt="" />
-                <p>MORE DETAILS COMING SOON</p>
-              </div>
+              <Image
+                className={styles.imageOne}
+                src={ImageTwo}
+                width={539}
+                height={324}
+                alt=""
+              />
             </div>
-            <button
-              onClick={() =>
-                ur.current.scrollIntoView({
-                  behavior: "smooth",
-                  block: "center",
-                })
-              }
-              className={styles.btn}
-            >
-              Stay Updated
-            </button>
+            <div className={styles.eventnoire_card}>
+              <div className={styles.dates_display}>
+                <div className={styles.info_wrapper}>
+                  <div className={styles.dates}>
+                    <Image src={Calender} width={17.5} height={20.75} alt="" />
+                    <p>SAT. FEB 12TH, 2022</p>
+                  </div>
+                  <div className={styles.time}>
+                    <Image src={Clock} width={17.5} height={20.75} alt="" />
+                    <span>3PM - 9PM</span>
+                  </div>
+                </div>
+
+                <div className={styles.dates}>
+                  <Image
+                    src={Location}
+                    width={17.5}
+                    height={20.75}
+                    className={styles.dates_img}
+                    alt=""
+                  />
+                  <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  getTicket("https://events.eventnoire.com/e/2chainz/tickets");
+                }}
+                className={styles.btn}
+              >
+                Get Tickets
+              </button>
+            </div>
           </div>
-        </div>
+
+          <div className={styles.image_container}>
+            <div
+              style={{
+                borderRadius: "5px",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                className={styles.imageOne}
+                src={ImageOne}
+                width={539}
+                height={324}
+                alt=""
+              />
+            </div>
+            <div className={styles.eventnoire_card}>
+              <div className={styles.dates_display}>
+                <div className={styles.info_wrapper}>
+                  <div className={styles.dates}>
+                    <Image src={Calender} width={17.5} height={20.75} alt="" />
+                    <p>FRI. FEB 18TH, 2022</p>
+                  </div>
+                  <div className={styles.time}>
+                    <Image src={Clock} width={17.5} height={20.75} alt="" />
+                    <span>9PM - 2AM</span>
+                  </div>
+                </div>
+                <div className={styles.dates}>
+                  <Image src={Location} width={17.5} height={20.75} alt="" />
+                  <p>MORE DETAILS COMING SOON</p>
+                </div>
+              </div>
+              <button
+                onClick={() =>
+                  ur.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  })
+                }
+                className={styles.btn}
+              >
+                Stay Updated
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className={styles.image_container}>
+            <div
+              style={{
+                borderRadius: "5px",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                className={styles.imageOne}
+                src={ImageTwo}
+                width={539}
+                height={324}
+                alt=""
+              />
+            </div>
+            <div className={styles.eventnoire_card}>
+              <div className={styles.dates_display}>
+                <div className={styles.info_wrapper}>
+                  <div className={styles.dates}>
+                    <Image src={Calender} width={17.5} height={20.75} alt="" />
+                    <p>SAT. FEB 12TH, 2022</p>
+                  </div>
+                  <div className={styles.time}>
+                    <Image src={Clock} width={17.5} height={20.75} alt="" />
+                    <span>3PM - 9PM</span>
+                  </div>
+                </div>
+
+                <div className={styles.dates}>
+                  <Image
+                    src={Location}
+                    width={17.5}
+                    height={20.75}
+                    className={styles.dates_img}
+                    alt=""
+                  />
+                  <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  getTicket("https://events.eventnoire.com/e/2chainz/tickets");
+                }}
+                className={styles.btn}
+              >
+                Get Tickets
+              </button>
+            </div>
+          </div>
+
+          <div className={styles.image_container}>
+            <div
+              style={{
+                borderRadius: "5px",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                className={styles.imageOne}
+                src={ImageOne}
+                width={539}
+                height={324}
+                alt=""
+              />
+            </div>
+            <div className={styles.eventnoire_card}>
+              <div className={styles.dates_display}>
+                <div className={styles.info_wrapper}>
+                  <div className={styles.dates}>
+                    <Image src={Calender} width={17.5} height={20.75} alt="" />
+                    <p>FRI. FEB 18TH, 2022</p>
+                  </div>
+                  <div className={styles.time}>
+                    <Image src={Clock} width={17.5} height={20.75} alt="" />
+                    <span>9PM - 2AM</span>
+                  </div>
+                </div>
+                <div className={styles.dates}>
+                  <Image src={Location} width={17.5} height={20.75} alt="" />
+                  <p>MORE DETAILS COMING SOON</p>
+                </div>
+              </div>
+              <button
+                onClick={() =>
+                  ur.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  })
+                }
+                className={styles.btn}
+              >
+                Stay Updated
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className={styles.image_container}>
+            <div
+              style={{
+                borderRadius: "5px",
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                className={styles.imageOne}
+                src={ImageTwo}
+                width={539}
+                height={324}
+                alt=""
+              />
+            </div>
+            <div className={styles.eventnoire_card}>
+              <div className={styles.dates_display}>
+                <div className={styles.info_wrapper}>
+                  <div className={styles.dates}>
+                    <Image src={Calender} width={17.5} height={20.75} alt="" />
+                    <p>SAT. FEB 12TH, 2022</p>
+                  </div>
+                  <div className={styles.time}>
+                    <Image src={Clock} width={17.5} height={20.75} alt="" />
+                    <span>3PM - 9PM</span>
+                  </div>
+                </div>
+
+                <div className={styles.dates}>
+                  <Image
+                    src={Location}
+                    width={17.5}
+                    height={20.75}
+                    className={styles.dates_img}
+                    alt=""
+                  />
+                  <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  getTicket("https://events.eventnoire.com/e/2chainz/tickets");
+                }}
+                className={styles.btn}
+              >
+                Get Tickets
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
