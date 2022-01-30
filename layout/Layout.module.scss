@@ -11,14 +11,14 @@
     height: 2264px;
 
     @media (max-width: $xl-breakpoint) {
-        height: 760px;
+        height: 1864px;
     }
 
     @media (max-width: $lg-breakpoint) {
-        height: 800px;
+        // height: 2264px;
     }
 
     @media (max-width: $md-breakpoint) {
-        height: 1109px;
+        height: 2500px;
     }
 }

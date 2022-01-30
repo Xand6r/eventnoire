@@ -7,7 +7,7 @@
   margin-top: 0;
   color: #19172d;
   font-family: "clash-bold";
-  background: linear-gradient(to right, #7D4FE0 , #F39180, #7AD5E9);
+  background: linear-gradient(to right, #7d4fe0, #f39180, #7ad5e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,7 +48,7 @@
   margin-top: 0;
   color: #19172d;
   font-family: "clash-bold";
-  background: linear-gradient(to right, #7D4FE0 , #F39180, #7AD5E9);
+  background: linear-gradient(to right, #7d4fe0, #f39180, #7ad5e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -68,12 +68,20 @@
   justify-content: center;
   flex-direction: column;
   gap: 80px;
+  @media (max-width: $lg-breakpoint) {
+    gap: 20px
+  }
   align-items: center;
   padding: 0 250px;
   margin-top: 94px;
 
-  section{
+  section {
     display: flex;
+    // flex-wrap: wrap;
+    @media (max-width: $lg-breakpoint) {
+      flex-direction: column;
+      gap: 20px
+    }
   }
 
   @media (max-width: $xxl-breakpoint) {

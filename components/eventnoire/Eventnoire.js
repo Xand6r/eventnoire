@@ -33,7 +33,7 @@ function Eventnoire({ ur, pr }) {
             >
               <Image
                 className={styles.imageOne}
-                src={ImageTwo}
+                src={require("../../public/images/events/1.jpg")}
                 width={539}
                 height={324}
                 alt=""
@@ -83,7 +83,7 @@ function Eventnoire({ ur, pr }) {
             >
               <Image
                 className={styles.imageOne}
-                src={ImageOne}
+                src={require("../../public/images/events/2.jpg")}
                 width={539}
                 height={324}
                 alt=""
@@ -98,24 +98,23 @@ function Eventnoire({ ur, pr }) {
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
-                    <span>9PM - 2AM</span>
+                    <span>8PM - 2AM</span>
                   </div>
                 </div>
                 <div className={styles.dates}>
                   <Image src={Location} width={17.5} height={20.75} alt="" />
-                  <p>MORE DETAILS COMING SOON</p>
+                  <p>THE VAULT - 2017 E 9TH ST, CLEVELAND, OH</p>
                 </div>
               </div>
               <button
                 onClick={() =>
-                  ur.current.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                  })
+                  getTicket(
+                    "https://events.eventnoire.com/e/allstarfriday2022/tickets"
+                  )
                 }
                 className={styles.btn}
               >
-                Stay Updated
+                Get Tickets
               </button>
             </div>
           </div>
@@ -131,7 +130,7 @@ function Eventnoire({ ur, pr }) {
             >
               <Image
                 className={styles.imageOne}
-                src={ImageTwo}
+                src={require("../../public/images/events/3.jpg")}
                 width={539}
                 height={324}
                 alt=""
@@ -142,11 +141,11 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SAT. FEB 12TH, 2022</p>
+                    <p>SUN FEB 18TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
-                    <span>3PM - 9PM</span>
+                    <span>12PM & 2PM</span>
                   </div>
                 </div>
 
@@ -158,12 +157,14 @@ function Eventnoire({ ur, pr }) {
                     className={styles.dates_img}
                     alt=""
                   />
-                  <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
+                  <p>THE IVY - 1212 W 6TH ST, CLEVELAND, OH</p>
                 </div>
               </div>
               <button
                 onClick={() => {
-                  getTicket("https://events.eventnoire.com/e/2chainz/tickets");
+                  getTicket(
+                    "https://events.eventnoire.com/e/all-star-brunch-club-the-ivy-2"
+                  );
                 }}
                 className={styles.btn}
               >
@@ -181,7 +182,7 @@ function Eventnoire({ ur, pr }) {
             >
               <Image
                 className={styles.imageOne}
-                src={ImageOne}
+                src={require("../../public/images/events/4.jpg")}
                 width={539}
                 height={324}
                 alt=""
@@ -192,28 +193,27 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>FRI. FEB 18TH, 2022</p>
+                    <p>SAT. FEB 19TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
-                    <span>9PM - 2AM</span>
+                    <span>12PM & 2PM</span>
                   </div>
                 </div>
                 <div className={styles.dates}>
                   <Image src={Location} width={17.5} height={20.75} alt="" />
-                  <p>MORE DETAILS COMING SOON</p>
+                  <p>THE IVY - 1212 W 6TH ST, CLEVELAND, OH</p>
                 </div>
               </div>
               <button
                 onClick={() =>
-                  ur.current.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                  })
+                  getTicket(
+                    "https://events.eventnoire.com/e/all-star-brunch-club-the-ivy/tickets"
+                  )
                 }
                 className={styles.btn}
               >
-                Stay Updated
+                Get Tickets
               </button>
             </div>
           </div>
@@ -229,7 +229,7 @@ function Eventnoire({ ur, pr }) {
             >
               <Image
                 className={styles.imageOne}
-                src={ImageTwo}
+                src={require("../../public/images/events/5.jpg")}
                 width={539}
                 height={324}
                 alt=""
@@ -240,11 +240,11 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SAT. FEB 12TH, 2022</p>
+                    <p>SAT 19TH & SUN 20TH FEB, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
-                    <span>3PM - 9PM</span>
+                    <span>3PM & 7PM</span>
                   </div>
                 </div>
 
@@ -256,12 +256,12 @@ function Eventnoire({ ur, pr }) {
                     className={styles.dates_img}
                     alt=""
                   />
-                  <p>THE RESERVE - 650 S Spring St, Los Angeles, CA 90014</p>
+                  <p>THE IVY - 1212 W 6TH ST, CLEVELAND, OH</p>
                 </div>
               </div>
               <button
                 onClick={() => {
-                  getTicket("https://events.eventnoire.com/e/2chainz/tickets");
+                  getTicket("https://www.jackdaniels.com/en-us/JDCLE");
                 }}
                 className={styles.btn}
               >
