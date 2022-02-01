@@ -228,10 +228,10 @@ function Eventnoire({ ur, pr }) {
               }}
             >
               <Image
-                className={styles.imageOne}
+                className={styles.custom_image}
                 src={require("../../public/images/events/5.jpg")}
                 width={539}
-                height={324}
+                height={450}
                 alt=""
               />
             </div>
