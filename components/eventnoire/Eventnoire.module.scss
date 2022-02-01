@@ -111,6 +111,10 @@
   border-radius: 5px;
   box-sizing: border-box;
   margin: 0 40px;
+  
+  img {
+    object-fit: cover;
+  }
   // border-radius: 6px;
   // overflow: hidden !important;
 
