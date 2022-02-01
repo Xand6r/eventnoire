@@ -132,7 +132,7 @@ function Eventnoire({ ur, pr }) {
                 className={styles.imageOne}
                 src={require("../../public/images/events/3.jpg")}
                 width={539}
-                height={324}
+                height={672}
                 alt=""
               />
             </div>
@@ -184,7 +184,7 @@ function Eventnoire({ ur, pr }) {
                 className={styles.imageOne}
                 src={require("../../public/images/events/4.jpg")}
                 width={539}
-                height={324}
+                height={672}
                 alt=""
               />
             </div>
@@ -228,10 +228,10 @@ function Eventnoire({ ur, pr }) {
               }}
             >
               <Image
-                className={styles.custom_image}
+                className={styles.imageOne}
                 src={require("../../public/images/events/5.jpg")}
                 width={539}
-                height={450}
+                height={672}
                 alt=""
               />
             </div>

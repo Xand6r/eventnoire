@@ -8,10 +8,12 @@
     background-size: cover;
     object-fit: cover;
     object-position: center;
-    height: 2214px;
+    height: 2870px;
+    // height: 2214px;
 
     @media (max-width: $xl-breakpoint) {
-        height: 1864px;
+        // height: 1864px;
+        height: 2320px;
     }
 
     @media (max-width: $lg-breakpoint) {
@@ -19,6 +21,6 @@
     }
 
     @media (max-width: $md-breakpoint) {
-        height: 2500px;
+        height: 3150px;
     }
 }
