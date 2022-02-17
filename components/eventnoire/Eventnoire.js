@@ -143,7 +143,7 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SAT. FEB 19TH, 2022</p>
+                    <p>SAT. FEB 18TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
@@ -188,7 +188,7 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SUN FEB 18TH, 2022</p>
+                    <p>SUN FEB 19TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
