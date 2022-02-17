@@ -23,7 +23,7 @@ function Eventnoire({ ur, pr }) {
         <HeaderMobile />
       </p>
       <div className={styles.eventnoire_images}>
-        {/* <section>
+        <section>
           {/* <div className={styles.image_container}>
             <div
               style={{
@@ -74,7 +74,7 @@ function Eventnoire({ ur, pr }) {
             </div>
           </div> */}
 
-          {/* <div className={styles.image_container}>
+          <div className={styles.image_container}>
             <div
               style={{
                 borderRadius: "5px",
@@ -117,10 +117,7 @@ function Eventnoire({ ur, pr }) {
                 Get Tickets
               </button>
             </div>
-          </div> */}
-        {/* </section>  */}
-
-        <section>
+          </div>
 
 
           <div className={styles.image_container}>
@@ -143,7 +140,7 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SAT. FEB 18TH, 2022</p>
+                    <p>SAT. FEB 19TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
@@ -167,6 +164,12 @@ function Eventnoire({ ur, pr }) {
               </button>
             </div>
           </div>
+        </section> 
+
+        <section>
+
+
+
 
           <div className={styles.image_container}>
             <div
@@ -188,7 +191,7 @@ function Eventnoire({ ur, pr }) {
                 <div className={styles.info_wrapper}>
                   <div className={styles.dates}>
                     <Image src={Calender} width={17.5} height={20.75} alt="" />
-                    <p>SUN FEB 19TH, 2022</p>
+                    <p>SUN FEB 20TH, 2022</p>
                   </div>
                   <div className={styles.time}>
                     <Image src={Clock} width={17.5} height={20.75} alt="" />
@@ -219,9 +222,7 @@ function Eventnoire({ ur, pr }) {
               </button>
             </div>
           </div>
-        </section>
 
-        <section>
           <div className={styles.image_container}>
             <div
               style={{
@@ -271,6 +272,10 @@ function Eventnoire({ ur, pr }) {
               </button>
             </div>
           </div>
+        </section>
+
+        <section>
+
         </section>
       </div>
     </div>
